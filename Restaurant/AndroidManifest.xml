@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mdad.restaurant"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".OrderActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name=".MenuSelectionActivity"
+            android:label="@string/title_activity_menu_selection"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mdad.restaurant.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MenuActivity"
+            android:label="@string/title_activity_menu" >
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name=".AdminMainActivity"
+            android:label="@string/title_activity_admin_main" >
+        </activity>
+        <activity
+            android:name=".AdminCategoryActivity"
+            android:label="@string/title_activity_admin_category"
+            android:parentActivityName=".AdminMainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mdad.restaurant.AdminMainActivity" />
+        </activity>
+        <activity
+            android:name=".AdminCategoryEditorActivity"
+            android:label="@string/title_activity_admin_category_editor"
+            android:parentActivityName=".AdminCategoryActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mdad.restaurant.AdminCategoryActivity" />
+        </activity>
+        <activity
+            android:name=".BillActivity"
+            android:label="@string/title_activity_bill"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mdad.restaurant.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AdminMenuActivity"
+            android:label="@string/title_activity_admin_menu"
+            android:parentActivityName=".AdminMainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mdad.restaurant.AdminMainActivity" />
+        </activity>
+        <activity
+            android:name=".AdminMenuEditorActivity"
+            android:label="@string/title_activity_admin_menu_editor"
+            android:parentActivityName=".AdminMenuActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mdad.restaurant.AdminMenuActivity" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name=".AccountActivity"
+            android:label="@string/title_activity_account" >
+        </activity>
+    </application>
+
+</manifest>

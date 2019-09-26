@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/restaurant_bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mdad.restaurant.BillActivity" >
+
+    <TextView
+        android:id="@+id/tvBillText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Name x Quantity = Price"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/lvBillList"
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:background="#FFFFFF" >
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF" >
+
+        <TextView
+            android:id="@+id/tvBillSubTotalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sub Total:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvBillSubTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="$0.00"
+            android:textColor="#FF0000"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF" >
+
+        <TextView
+            android:id="@+id/tvBillGstText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GST:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvBillGst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="$0.00"
+            android:textColor="#FF0000"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingBottom="10dp" >
+
+        <TextView
+            android:id="@+id/tvBillTotalPriceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Price:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvBillTotalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="$0.00"
+            android:textColor="#FF0000"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="30dp"
+        android:text="Ok" />
+
+</LinearLayout>

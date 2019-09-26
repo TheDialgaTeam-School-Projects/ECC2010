@@ -1,0 +1,2 @@
+Restaurant folder consist of Mobile App.
+MDAD folder consist of Tomcat Servlet.
